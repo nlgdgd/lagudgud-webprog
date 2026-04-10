@@ -184,7 +184,7 @@ const HomePage = () => {
             
             <footer className="border-t border-zinc-900 bg-[#f8e5e5] px-4 py-6 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <p className="text-sm text-zinc-500">© 2026 Wireframe Studio. All rights reserved.</p>
+                    <p className="text-sm text-zinc-500">© 2026 BLACKPINK Area. All rights reserved.</p>
                 </div>
             </footer>
         </div>
