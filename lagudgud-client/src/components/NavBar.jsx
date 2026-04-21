@@ -5,11 +5,12 @@ const links = [
     { label: 'Home', to: '/' },
     { label: 'About', to: '/about' },
     { label: 'Articles', to: '/articles' },
+    { label: 'Log In', to: '/auth/signin' },
 ];
 
 const navLinkClassName = ({ isActive }) =>
     [
-        'rounded-full border-2 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] transition',
+        'rounded-full border-2 px-4 py-2 text-[11px] font-semibold transition-all hover:-translate-y-1 uppercase tracking-[0.24em] transition',
         isActive ? 'border-zinc-900 bg-zinc-900 text-zinc-50'
         : 'border-transparent text-zinc-500 hover:border-zinc-900 hover:bg-zinc-50 hover:text-zinc-900',
     ]

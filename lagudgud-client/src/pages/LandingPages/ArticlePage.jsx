@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import Button from "../components/Button";
-import articles from '../assets/article-content.js'
+import Button from "../../components/Button.jsx";
+import articles from '../../assets/article-content.js'
 
 function ArticlePage () {
     const { name } = useParams();
@@ -24,7 +24,12 @@ function ArticlePage () {
         <section className="border-y-2 border-zinc-900 bg-[#f5b9c9] px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
             <div className="max-w-3xl">
                 <div className="mb-4">
-                    <Button to="/articles">← Back to Articles </Button>
+                    <Button 
+                        to="/articles"
+                        className="pt-2.2 pb-2.2 mb-4"
+                    > 
+                        ← Back to Articles 
+                    </Button>
                 </div>
                 
                 <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-black">
@@ -45,7 +50,7 @@ function ArticlePage () {
             <div className="mx-auto max-w-3xl">
                 <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] border-2 border-zinc-900 bg-zinc-200 mb-8">
                     <img 
-                    src={`/${article.image}`} 
+                    src={article.image}
                     alt={article.title}
                     className="w-full h-full object-cover rounded-2xl"
                     />
@@ -60,7 +65,12 @@ function ArticlePage () {
                 </div>
 
                 <div className="mt-8 border-t-2 border-zinc-900 pt-6">
-                    <Button to="/articles"> Back to Articles </Button>
+                    <Button 
+                        to="/articles"
+                        className="pt-2.2 pb-2.2 mt-4"
+                    > 
+                        Back to Articles 
+                    </Button>
                 </div>
             </div>
         </section>

@@ -29,7 +29,12 @@ const ArticleList = ({ articles }) => {
                 
                 <div className="mt-auto pt-4">
                     <Link to={`/articles/${article.name}`}>
-                        <Button className="mt-4">Read More</Button>
+                        <Button 
+                            className="mt-4"
+                            variant='primary'
+                        >
+                            Read More
+                        </Button>
                     </Link>
                 </div>
             </article>

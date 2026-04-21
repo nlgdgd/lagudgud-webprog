@@ -1,38 +1,59 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
-// homePage structure
-import Layout from './components/Layout';
-import ArticlePage from './pages/ArticlePage';
-import ArticleListPage from './pages/ArticleListPage.jsx';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import NotFoundPage from './pages/NotFoundPage';
+// homePage tructure
+import Layout from './layouts/Layout.jsx';
+import ArticlePage from './pages/LandingPages/ArticlePage.jsx';
+import HomePage from './pages/LandingPages/HomePage.jsx';
+import AboutPage from './pages/LandingPages/AboutPage.jsx';
+import ArticleListPage from './pages/LandingPages/ArticleListPage.jsx';
+
+import AuthLayout from './layouts/AuthLayout.jsx';
+import SignInPage from './pages/AuthPages/SignInPage.jsx';
+import SignUpPage from './pages/AuthPages/SignUpPage.jsx';
+
+import NotFoundPage from './pages/NotFoundPage.jsx';
+
+
 
 const routes = [
   {
     path: "/",
     element: <Layout />,
-
-    // error element
+    
     errorElement: <NotFoundPage />,
 
     children: [
       {
-        // path declaration
+
         path: '',
-        element: <HomePage />
+        element: <HomePage />,
       },
       {
         path: 'about',
-        element: <AboutPage />
+        element: <AboutPage />,
       },
       {
-        path: '/articles',
-        element: <ArticleListPage />
+        path: 'articles',
+        element: <ArticleListPage />,
       },
       {
-        path: '/articles/:name', // -->articles/learn-react
-        element: <ArticlePage />
+        path: 'articles/:name',
+        element: <ArticlePage />,
+      },
+    ],
+  },
+  {
+    path: "auth",
+    element: <AuthLayout />,
+    errorElement: <NotFoundPage />,
+    children: [
+      {
+        path: 'signin',
+        element: <SignInPage />,
+      },
+      {
+        path: 'signup',
+        element: <SignUpPage />,
       },
     ],
   },

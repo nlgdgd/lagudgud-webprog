@@ -1,13 +1,13 @@
-import Button from '../components/Button';
-import debut from '../assets/debut.jpg'
-import squareup from '../assets/squareup.jpg'
-import thealbum from '../assets/thealbum.jpg'
-import pinkvenom from '../assets/pinkvenom.jpg'
-import bornpink from '../assets/bornpink.jpg'
-import award1 from '../assets/award1.jpg'
-import award2 from '../assets/award2.jpg'
-import award3 from '../assets/award3.jpg'
-import award4 from '../assets/award4.jpg'
+import Button from '../../components/Button';
+import debut from '../../assets/debut.jpg'
+import squareup from '../../assets/squareup.jpg'
+import thealbum from '../../assets/thealbum.jpg'
+import pinkvenom from '../../assets/pinkvenom.jpg'
+import bornpink from '../../assets/bornpink.jpg'
+import award1 from '../../assets/award1.jpg'
+import award2 from '../../assets/award2.jpg'
+import award3 from '../../assets/award3.jpg'
+import award4 from '../../assets/award4.jpg'
 
 
 const AboutPage = () => {
