@@ -61,15 +61,15 @@ const SignInPage = () => {
                 </button>
             </div>
 
-            <Button type="submit" variant="primary" className={actionButtonClassName}>
+            <Button type="submit" variant="tertiary" className={'${actionButtonClassName} flex w-full items-center justify-center gap-2 rounded-full border-2 border-zinc-900 bg-transparent px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-zinc-50 transition-all hover:bg-[#000000]'}>
                 Log In
             </Button>
 
             <div className="grid gap-3 pt-2 sm:grid-cols-2">
     <Button 
         type="button" 
-        variant="secondary" 
-        className={`${actionButtonClassName} flex w-full items-center justify-center gap-2 rounded-full border-2 border-zinc-900 bg-transparent px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-zinc-900 transition-all hover:bg-zinc-100`}
+        variant="tertiary" 
+        className={`${actionButtonClassName} flex w-full items-center justify-center gap-2 rounded-full border-2 border-zinc-900 bg-transparent px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-zinc-50 transition-all hover:bg-[#00000]`}
     >
         <img src={googleIcon} alt="Google" className="h-4 w-4 object-contain" />
         Log In with Google
@@ -77,8 +77,8 @@ const SignInPage = () => {
 
     <Button 
         type="button" 
-        variant="secondary" 
-        className={`${actionButtonClassName} flex w-full items-center justify-center gap-2 rounded-full border-2 border-zinc-900 bg-transparent px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-zinc-900 transition-all hover:bg-zinc-100`}
+        variant="tertiary" 
+        className={`${actionButtonClassName} flex w-full items-center justify-center gap-2 rounded-full border-2 border-zinc-900 bg-transparent px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-zinc-50 transition-all hover:bg-[#000000]`}
     >
         <img src={apple} alt="Apple" className="h-4 w-4 object-contain" />
         Log In with Apple
@@ -98,8 +98,8 @@ const SignInPage = () => {
                 
                 <Button 
                     type="button" 
-                    variant="secondary" 
-                    className="mt-6 pt-2.5 pb-2.5 border-2 border-zinc-900 px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition hover:bg-zinc-900 hover:text-white"
+                    variant="tertiary" 
+                    className="mt-6 pt-2.5 pb-2.5 border-2 border-zinc-900 px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition hover:bg-[#000000] hover:text-white"
                 >
                     ← Back to Home
                 </Button>

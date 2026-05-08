@@ -20,7 +20,7 @@ const ArticleListPage = () => {
                         </p>
                         
                         <div className="mt-6">
-                            <Button to="/">Back Home</Button>
+                            <Button to="/" variant="secondary" className="rounded-full bg-[#f6f4f2] px-3 py-2.5 transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0.5 active:shadow-lg">Back Home</Button>
                             </div>
                             
         </section>
@@ -33,16 +33,8 @@ const ArticleListPage = () => {
 
                 <h2 className="mt-2 text-2xl font-semibold text-black"> As If It's Your Last </h2>
             </div>
-
             <ArticleList articles={articles} />
-
         </section>
-
-        <footer className="border-t border-zinc-900 bg-[#f8e5e5] px-4 py-6 sm:px-6 lg:px-8">
-            <div className="text-center">
-                <p className="text-sm text-zinc-500">© 2026 BLACKPINK Area. All rights reserved.</p>
-            </div>
-        </footer>
     </div>
     );
 }
