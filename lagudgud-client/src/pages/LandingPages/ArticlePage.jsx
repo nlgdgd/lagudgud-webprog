@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Button from "../../components/Button.jsx";
-import articles from '../../assets/article-content.js'
+import articles from '../../data/article-content.js'
 
 function ArticlePage () {
     const { name } = useParams();
@@ -12,7 +12,7 @@ function ArticlePage () {
             <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
                 <div className="mx-auto max-w-3xl">
                     <h1 className="text-3xl font-bold text-black">Article not found</h1>
-                    <Button to="/articles" className="mt-6">Back to Articles</Button>
+                    <Button to="/articles" variant="secondary" className="rounded-full bg-[#f6f4f2] px-3 py-2.5 transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0.5 active:shadow-lg">Back to Articles</Button>
                 </div>
             </section>
         </div>
@@ -26,7 +26,8 @@ function ArticlePage () {
                 <div className="mb-4">
                     <Button 
                         to="/articles"
-                        className="pt-2.2 pb-2.2 mb-4"
+                        variant="secondary"
+                        className="rounded-full bg-[#f6f4f2] px-3 py-2.5 transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0.5 active:shadow-lg"
                     > 
                         ← Back to Articles 
                     </Button>
@@ -67,7 +68,8 @@ function ArticlePage () {
                 <div className="mt-8 border-t-2 border-zinc-900 pt-6">
                     <Button 
                         to="/articles"
-                        className="pt-2.2 pb-2.2 mt-4"
+                        variant="secondary"
+                        className="rounded-full bg-[#f6f4f2] px-3 py-2.5 transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0.5 active:shadow-lg"
                     > 
                         Back to Articles 
                     </Button>

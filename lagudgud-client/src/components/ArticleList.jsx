@@ -29,10 +29,7 @@ const ArticleList = ({ articles }) => {
                 
                 <div className="mt-auto pt-4">
                     <Link to={`/articles/${article.name}`}>
-                        <Button 
-                            className="mt-4"
-                            variant='primary'
-                        >
+                        <Button className="mt-4 rounded-full bg-[#FFA6C9] px-2.5 py-2 transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0.5 active:shadow-lg" variant="tertiary">
                             Read More
                         </Button>
                     </Link>
